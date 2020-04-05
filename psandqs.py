@@ -29,9 +29,9 @@ def snpf(s):
     for i in range(5):
         if s[i].isnumeric():
             known[i] = int(s[i])
-    print(known)
     return smallest_prime_nonfactor_(candidates(5, known))
 
 
 assert smallest_prime_nonfactor(30030) == 17
 assert smallest_prime_nonfactor_(candidates(5, {0: 3, 1: 0, 2: 0, 3:  3})) == 29
+assert snpf('3003?') == 29
